@@ -16,12 +16,14 @@ module regFile_tb();
 
     $dumpfile("regFile_tb.vcd");
     $dumpvars(0, regFile_tb);
-    R1 = 3; R2 = 6; W1 = 0; D1 = 0;
+    R1 = 2; R2 = 1; W1 = 2; D1 = 25;
+    $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
     #1
-    R1 = 5; R2 = 5; W1 = 5; D1 = 5;
+    R1 = 5; R2 = 5; W1 = 5; D1 = 3;
+    $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
     #1
-    R1 = 5; R2 = 5; W1 = 5; D1 = 5;
-    $display("%b", Out1);
+    R1 = 5; R2 = 5; W1 = 5; D1 = 3;
+    $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
     #15 $finish;
   end
 
