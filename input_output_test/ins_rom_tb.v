@@ -15,7 +15,7 @@ module inst_rom_tb();
         $dumpvars(0, inst_rom_tb);
         clk <= 0;
         rst <= 0;
-
+        
         #1
         rst <= 1;
 
@@ -38,6 +38,7 @@ module inst_rom_tb();
         #1 addr_in <= 32'b00000000000000000000000000001110;
         #1 addr_in <= 32'b00000000000000000000000000001111;
         #1 addr_in <= 32'b00000000000000000000000000010000;
+        $display("%b", addr_in[5:0]);
         #15 $finish;
     end
 

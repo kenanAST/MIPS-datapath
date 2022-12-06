@@ -1,0 +1,51 @@
+$date
+	Tue Dec 06 06:53:08 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module regFile_tb $end
+$var wire 32 ! Out2 [31:0] $end
+$var wire 32 " Out1 [31:0] $end
+$var reg 32 # D1 [31:0] $end
+$var reg 5 $ R1 [4:0] $end
+$var reg 5 % R2 [4:0] $end
+$var reg 5 & W1 [4:0] $end
+$scope module kenan $end
+$var wire 32 ' D1 [31:0] $end
+$var wire 5 ( R1 [4:0] $end
+$var wire 5 ) R2 [4:0] $end
+$var wire 5 * W1 [4:0] $end
+$var reg 32 + Out1 [31:0] $end
+$var reg 32 , Out2 [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ,
+bx +
+b0 *
+b110 )
+b11 (
+b0 '
+b0 &
+b110 %
+b11 $
+b0 #
+bx "
+bx !
+$end
+#1000
+b101 #
+b101 '
+b101 &
+b101 *
+b101 %
+b101 )
+b101 $
+b101 (
+#17000
