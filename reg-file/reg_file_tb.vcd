@@ -1,5 +1,5 @@
 $date
-	Tue Dec 06 12:27:46 2022
+	Tue Dec 06 12:29:09 2022
 $end
 $version
 	Icarus Verilog
@@ -14,7 +14,7 @@ $var reg 32 # D1 [31:0] $end
 $var reg 5 $ R1 [4:0] $end
 $var reg 5 % R2 [4:0] $end
 $var reg 5 & W1 [4:0] $end
-$scope module kenan $end
+$scope module register_file $end
 $var wire 32 ' D1 [31:0] $end
 $var wire 5 ( R1 [4:0] $end
 $var wire 5 ) R2 [4:0] $end

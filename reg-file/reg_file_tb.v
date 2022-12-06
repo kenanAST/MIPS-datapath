@@ -10,7 +10,7 @@ module reg_file_tb();
   wire [31:0] Out1, Out2;
 
 
-  reg_file kenan(R1, R2, W1, D1, Out1, Out2);
+  reg_file register_file(R1, R2, W1, D1, Out1, Out2);
 
   initial begin 
 
