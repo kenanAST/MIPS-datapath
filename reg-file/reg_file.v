@@ -1,4 +1,4 @@
-module regFile(R1, R2, W1, D1, Out1, Out2);
+module reg_file(R1, R2, W1, D1, Out1, Out2);
   input [4:0] R1, R2; 
   input [4:0] W1;
   input WE;

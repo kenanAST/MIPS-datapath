@@ -1,5 +1,5 @@
 $date
-	Tue Dec 06 11:58:19 2022
+	Tue Dec 06 12:27:46 2022
 $end
 $version
 	Icarus Verilog
@@ -7,7 +7,7 @@ $end
 $timescale
 	1ps
 $end
-$scope module regFile_tb $end
+$scope module reg_file_tb $end
 $var wire 32 ! Out2 [31:0] $end
 $var wire 32 " Out1 [31:0] $end
 $var reg 32 # D1 [31:0] $end
