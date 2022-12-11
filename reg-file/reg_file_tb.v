@@ -10,7 +10,7 @@ module reg_file_tb();
 
 
   reg_file register_file(clk, rst, R1, R2, W1, D1, Out1, Out2);
-
+  
   always #1 clk = ~clk;
 
   initial begin 

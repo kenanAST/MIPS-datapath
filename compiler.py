@@ -3,12 +3,10 @@ import sys
 instructions = [
   '00000000 00000000 00000000 10001111', #143
   '00000000 00000000 00000000 11010110', #214
-  '00000000 00000000 00000100 00000000'
+  '00000000 00000000 00000100 00000000', #1024
 ]
 
 compiled = ""
-
-
 
 for instruction in instructions:
   instruction = instruction.replace(" ", "")
