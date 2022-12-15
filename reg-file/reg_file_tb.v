@@ -23,9 +23,10 @@ module reg_file_tb();
     #1
     rst<=0;
     #1
-    R1 = 2; R2 = 1; W1 = 2; D1 = 25;
+    R1 = 2'b0001; R2 = 2'b0011; W1 = 2'b0001; D1 = 32;
     $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
     #1
+    W1 = 2'b0011; D1 = 25;
     $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
     #1
     $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
