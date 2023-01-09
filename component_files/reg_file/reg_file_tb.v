@@ -15,7 +15,7 @@ module reg_file_tb();
 
   initial begin 
     
-    $dumpfile("reg_file_tb.vcd");
+    $dumpfile("./component_files/reg_file/reg_file_tb.vcd");
     $dumpvars(0, reg_file_tb);
 
     clk <= 0;
