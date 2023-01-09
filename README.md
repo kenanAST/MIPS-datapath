@@ -8,21 +8,20 @@ This repository contains a Verilog implementation of a MIPS datapath. The datapa
 - Arithmetic and logical operations in the ALU
 - Control unit for executing instructions
 
-<img src="https://lh6.googleusercontent.com/L1gyIvhlpWgn1T1rcDtjqgNyDG8LKC7u-3gh7kYfz69Fw-Va1dhMRUrXmBpLUPVjieGwPil5mKpkf0A=w1903-h979" alt="Single Cycle Datapath" />
+<img src="https://imgur.com/a/TF2u6LY" alt="Single Cycle Datapath" />
 
 ## Usage
 
 To use the MIPS datapath, you will need a Verilog compiler such as [Icarus Verilog](http://iverilog.icarus.com/).
 
 1. Clone the repository:
-`git clone https://github.com/kenanAST/MIPS-datapath.git`
+   `git clone https://github.com/kenanAST/MIPS-datapath.git`
 
 2. Compile the Verilog files:
-`python compiler.py blank.memh`
+   `python compiler.py blank.memh`
 
 3. Run the simulation:
-`python run.py testbench.v`
-
+   `python run.py testbench.v`
 
 ## File Structure
 
@@ -41,4 +40,3 @@ The repository contains the following files:
 ## Acknowledgements
 
 The Verilog code for the MIPS datapath is based on the [Digital Design and Computer Architecture](https://www.elsevier.com/books/digital-design-and-computer-architecture/harris/978-0-12-385471-3) textbook by David Harris and Sarah Harris.
-
