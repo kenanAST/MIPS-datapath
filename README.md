@@ -17,7 +17,7 @@ To use the MIPS datapath, you will need a Verilog compiler such as [Icarus Veril
 1. Clone the repository:
    `git clone https://github.com/kenanAST/MIPS-datapath.git`
 
-2. Compile the MIPS Instruction(see compiler.py):
+2. Compile the MIPS Instructions(see compiler.py):
    `python compiler.py blank.memh`
 
 3. Run the simulation:
