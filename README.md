@@ -8,7 +8,7 @@ This repository contains a Verilog implementation of a MIPS datapath. The datapa
 - Arithmetic and logical operations in the ALU
 - Control unit for executing instructions
 
-<img src="https://imgur.com/a/TF2u6LY" alt="Single Cycle Datapath" />
+<img src="https://i.imgur.com/GL7WIyy.png" alt="Single Cycle Datapath" />
 
 ## Usage
 
