@@ -1,3 +1,5 @@
+`include "adder.v"
+`include "program_counter.v"
 `include "inst_rom.v"
 `include "reg_file.v"
 `include "input_mux.v"
@@ -19,7 +21,10 @@ module processor(
   output reg serial_wren_out
 );
   reg clk, rst;
-  reg [31: 0] inst_rom_in;
+
+
+  wire [31:0] PCout;
+  wire [31: 0] inst_rom_in;
   wire[31:0] inst_rom_out;
   wire [4:0] first_mux_out;
   wire [31:0] second_mux_out;
@@ -38,6 +43,8 @@ module processor(
   wire serial_rden_out;
   wire serial_wren_out;
 
+  program_counter pc(clk, rst, inst_rom_in, inst_rom_in);
+  adder a(PCout, inst_rom_in);
   inst_rom instruction_memory(clk, rst, inst_rom_in, inst_rom_out);
   mux2to1 #(5) dut(inst_rom_out[20:16], inst_rom_out[15:11], 1'b0, first_mux_out);
   reg_file register_file(clk, rst, inst_rom_out[25:21], inst_rom_out[20:16], first_mux_out, third_mux_out, reg_file_out1, reg_file_out2);

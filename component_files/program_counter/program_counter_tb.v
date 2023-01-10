@@ -23,15 +23,15 @@ module program_counter_tb();
 		rst <= 0;
 		$display("%d %d", adder_out, PCout);	
 
-		#10
+		#1	
 		rst <= 1;
 		$display("%d %d", adder_out, PCout);
 
-		#5
+		#	
 		rst <= 0;
 		$display("%d %d", adder_out, PCout);
 
-		#40		
+		#1	
 		$finish;
 	end
 endmodule
