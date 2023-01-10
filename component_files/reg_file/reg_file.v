@@ -10,7 +10,12 @@ module reg_file(
 
   always @(posedge clk)
   begin
-    rf[W1] <= D1;
+    if(W1 == 0) begin
+        rf[W1] <= 0;
+      end
+    else begin
+        rf[W1] <= D1;
+      end
     Out1 <= rf[R1];
     Out2 <= rf[R2];
   end

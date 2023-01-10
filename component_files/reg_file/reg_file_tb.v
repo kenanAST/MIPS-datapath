@@ -20,16 +20,21 @@ module reg_file_tb();
 
     clk <= 0;
     rst <= 1;
+
     #1
     rst<=0;
-    #1
-    R1 = 2'b0001; R2 = 2'b0011; W1 = 2'b0001; D1 = 32;
+
+    #2
+    R1 = 5; R2 = 2; W1 = 5; D1 = 32;
     $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
-    #1
-    W1 = 2'b0011; D1 = 25;
+
+    #2
+    // R1 = 1; R2 = 2; W1 = 1; D1 = 32;
     $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
-    #1
+
+    #2 R1 = 5; R2 = 2; W1 = 2; D1 = 50;
     $display("%d %d %d %d %d", R1, R2, W1, Out1, Out2);
+
     #15 $finish;
   end
 
