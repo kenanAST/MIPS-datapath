@@ -7,9 +7,11 @@ module inst_rom_tb();
     wire [31:0] inst_rom_in;
     wire [31:0] inst_rom_out;
     wire [31:0] PCout;
+    wire [31:0] adder_constant = 32'h00000004;
+
 
     program_counter pc(clk, rst, inst_rom_in, PCout);
-	adder a(PCout, inst_rom_in);
+	adder a(PCout, adder_constant, inst_rom_in);
     inst_rom instruction_memory(clk, rst, PCout, inst_rom_out);
     
     always #1 clk = ~clk;

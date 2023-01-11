@@ -5,9 +5,11 @@ module program_counter_tb();
 	reg clk, rst;
 	wire [31:0] PCout;
 	wire [31:0] adder_out;
+	wire [31:0] adder_constant = 32'h00000004;
+
 
 	program_counter pc(clk, rst, adder_out, PCout);
-	adder a(PCout, adder_out);
+	adder a(PCout, adder_constant, adder_out);
 
 	always #1 clk = ~clk;
 	

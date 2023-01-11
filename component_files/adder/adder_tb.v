@@ -2,10 +2,12 @@
 
 module adder_tb();
 
-	reg [31:0] PCin;
+	reg [31:0] PCin1;
 	wire [31:0] out;
+	wire [31:0] adder_constant = 32'h00000004;
+
 	
-	adder a(PCin, out);
+	adder a(PCin1, adder_constant, out);
 	
 	initial begin
 
@@ -13,14 +15,14 @@ module adder_tb();
     	$dumpvars(0, adder_tb);
 
 		#1
-			PCin<= 0;
-			$display("%d %d", PCin, out);
+			PCin1<= 0;
+			$display("%d %d", PCin1, out);
         #1
-			PCin<= 10;
-			$display("%d %d", PCin, out);
+			PCin1<= 10;
+			$display("%d %d", PCin1, out);
         #1
-			PCin<= 14;
-			$display("%d %d", PCin, out); 
+			PCin1<= 14;
+			$display("%d %d", PCin1, out); 
         #1
         $finish;
 	end
