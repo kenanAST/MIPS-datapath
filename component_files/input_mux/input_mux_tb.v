@@ -13,7 +13,7 @@ module mux2to1_tb();
   initial begin
 
     //gtkwave
-    $dumpfile("input_mux_tb.vcd");
+    $dumpfile("./component_files/input_mux/input_mux_tb.vcd");
     $dumpvars(0, mux2to1_tb);
 
     // Test 1
